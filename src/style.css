@@ -1,0 +1,214 @@
+:root {
+  --color-navy: #002772;
+  --color-pale-pink: #FDE2FF;
+  --color-dark: #1E1E1E;
+  --color-purple: #720060;
+  --color-pale-blue: #D6E6FF;
+  --color-dark-grey: #3F3F3F;
+  --color-silver: #DCDCDC;
+  --color-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Using a modern font as requested */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Utils */
+.loader {
+  border: 4px solid var(--color-silver);
+  border-top: 4px solid var(--color-dark);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Layout */
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+.page-loading {
+  background-color: var(--color-silver);
+}
+
+.product-card {
+  background: var(--color-white);
+  width: 80%;
+  max-width: 1000px;
+  min-height: 500px; /* skeleton size */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center; /* Centers loader or content */
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Inner content wrappers handled in component styles or here if global */
+/* We expect the component to provide a wrapper with display:flex for the content */
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.product-details {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* changed from space-between */
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-silver);
+  margin-bottom: 20px;
+  color: var(--color-dark-grey);
+}
+
+.description {
+  color: var(--color-dark-grey);
+  line-height: 1.6;
+  font-size: 16px;
+  flex-grow: 1; /* Pushes price/buttons down */
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.btn-buy {
+  color: var(--color-white);
+}
+
+.btn-next {
+  background: var(--color-white);
+}
+
+/* Men's Section */
+.page-men-section {
+  background-color: var(--color-pale-blue);
+  /* Top background pattern can be added here if we had SVG */
+}
+
+.page-men-section .title, .page-men-section .price {
+  color: var(--color-navy);
+}
+
+.page-men-section .btn-buy {
+  background-color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+.page-men-section .btn-next {
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+/* Women's Section */
+.page-women-section {
+  background-color: var(--color-pale-pink);
+}
+
+.page-women-section .title, .page-women-section .price {
+  color: var(--color-purple);
+}
+
+.page-women-section .btn-buy {
+  background-color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+
+.page-women-section .btn-next {
+  color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+
+/* Unavailable Section */
+.page-unavailable {
+  background-color: var(--color-silver);
+}
+
+.unavailable-card {
+  background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M...'%20stroke='%23DCDCDC'%20/%3E"); /* Placeholder */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.unavailable-msg {
+  font-size: 18px;
+  color: var(--color-dark);
+}
+.sad-face {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
