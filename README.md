@@ -1,4 +1,4 @@
-# Laporan Pengerjaan Tugas Magang: E-Commerce Product Catalog
+# Laporan Pengerjaan E-Commerce Product Catalog
 
 **Status**: Selesai  
 **Tanggal**: 6 Februari 2026  
