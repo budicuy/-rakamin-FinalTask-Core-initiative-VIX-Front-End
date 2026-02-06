@@ -33,7 +33,7 @@ Warna-warna berikut diimplementasikan sebagai variabel CSS untuk konsistensi:
 ## 3. Tahapan Instalasi
 
 ### Prasyarat
-Sistem operasi menggunakan Linux dan telah terinstall **Bun** (versi 1.3.5).
+Sistem operasi menggunakan Windows/Mac/Linux dan telah terinstall **Node.js** (versi 1.3.5).
 
 ### Langkah 1: Inisialisasi Project
 Project dibuat menggunakan perintah `create vite` melalui Bun.
@@ -117,7 +117,7 @@ Menambahkan font **Inter** dari Google Fonts pada `index.html` untuk tampilan ti
 
 ---
 
-## 5. Fitur Utama
+## 5. Fitur
 
 1.  **Dynamic Theming**: Background dan warna tombol berubah otomatis sesuai jenis kelamin kategori produk.
 2.  **Smart Navigation**: Tombol "Next Product" akan looping dari ID 1 sampai 20 terus menerus.
