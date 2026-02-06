@@ -33,7 +33,7 @@ Warna-warna berikut diimplementasikan sebagai variabel CSS untuk konsistensi:
 ## 3. Tahapan Instalasi
 
 ### Prasyarat
-Sistem operasi menggunakan Windows/Mac/Linux dan telah terinstall **Node.js** (versi 1.3.5).
+Sistem operasi menggunakan Windows/Mac/Linux dan telah terinstall **Node.js** (versi 20+).
 
 ### Langkah 1: Inisialisasi Project
 Project dibuat menggunakan perintah `create vite` melalui Bun.
