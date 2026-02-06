@@ -13,7 +13,7 @@ Dokumen ini berisi laporan teknis dan dokumentasi lengkap mengenai pengembangan 
 Sesuai arahan, aplikasi dibangun dengan spesifikasi berikut:
 - **Framework**: Vue.js (Composition API)
 - **Build Tool**: Vite
-- **Package Manager**: Bun
+- **Package Manager**: Node.js
 - **Styling**: Vanilla CSS (Tanpa Framework CSS seperti Bootstrap/Tailwind)
 - **Font**: Inter (Google Fonts)
 
@@ -36,10 +36,10 @@ Warna-warna berikut diimplementasikan sebagai variabel CSS untuk konsistensi:
 Sistem operasi menggunakan Windows/Mac/Linux dan telah terinstall **Node.js** (versi 20+).
 
 ### Langkah 1: Inisialisasi Project
-Project dibuat menggunakan perintah `create vite` melalui Bun.
+Project dibuat menggunakan perintah `create vite` melalui nodejs.
 
 ```bash
-bun create vite app --template vue
+npm create vite app --template vue
 ```
 
 ### Langkah 2: Instalasi Dependencies
@@ -47,7 +47,7 @@ Masuk ke direktori project dan menginstall dependencies yang dibutuhkan.
 
 ```bash
 cd app
-bun install
+npm install
 ```
 
 ---
@@ -131,7 +131,7 @@ Menambahkan font **Inter** dari Google Fonts pada `index.html` untuk tampilan ti
 Untuk menjalankan aplikasi di lingkungan lokal (Dev Server):
 
 ```bash
-bun run dev
+npm run dev
 ```
 
 Aplikasi akan berjalan di `http://localhost:5173`.
