@@ -2,7 +2,7 @@
 
 **Status**: Selesai  
 **Tanggal**: 6 Februari 2026  
-**Teknologi**: Vue.js 3, Vite, Bun, Vanilla CSS
+**Teknologi**: Vue.js 3, Node.js, Vanilla CSS
 
 ---
 
